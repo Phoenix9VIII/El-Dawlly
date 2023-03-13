@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+  width: auto;
+
+}
+
+.container {
+	width: auto;
+	margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+  animation-name: example;
+  animation: example 5s infinite;
+
+
+}
+
+@keyframes example {
+  0%   {background-color: #31dbe7;}
+  25%  {background-color: rgb(59, 160, 243);}
+  50%  {background-color: rgb(35, 172, 226);}
+  100% {background-color: #55d6aa;}
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+  
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+
+
+
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Whatsapp */
+.fa-whatspp {
+  background: #55ACEE;
+  color: white;
+}
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+.slider{
+  max-width: 1920px;
+  height: 480px;
+  background: url(img6.jpg);
+  margin: 50px auto;
+  animation: slide 10s infinite;
+}
+@keyframes slide{
+  25%{
+    background: url(img9.jpg);
+  }
+
+50%{
+  background: url(img7.jpg);
+}
+75%{
+  background: url(img8.jpg);
+}
+100%{
+  background: url(img6.jpg);
+}
+}
+
+  div.gallery:hover {
+
+    opacity: 0.5;
+
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+
+  div.desc {
+    width: auto;
+    background-color: #13279bfa;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 16px 32px;
+    transition: .5s ease;
+    position: center;
+    opacity: 1;
+    top: 50%;
+    right: 50%;
+
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .responsive {
+    padding: 0 2px;
+    float: left;
+    width: 24.99999%;
+  }
+
+
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+
+
+
+
+  .p1 {
+    font-size: 150%;
+  }
